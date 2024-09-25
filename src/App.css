@@ -32,7 +32,94 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.ui-container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+
+.menu-container {
+  position: absolute;
+  top: 25vh;
+  left: 25vw;
+  height: 40vh;
+  width: 50vw;
+  background-color: rgb(40, 43, 48, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.start-button {
+  background-color: rgb(206, 212, 222);
+  width: 15vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.start-text {
+  color: black;
+}
+
+.score-container{
+  position:absolute;
+  top: 10vh;
+  left: 35vw;
+  width: 30vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.score-text {
+  font-size: 50px;
+}
+
+.game-over-container {
+  position: absolute;
+  top: 20vh;
+  left: 25vw;
+  height: 60vh;
+  width: 50vw;
+  background-color: rgb(40, 43, 48);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2em;
+  gap: 1em;
+}
+
+.game-over-text {
+  color: rgb(237, 240, 245);
+  font-size: 52px;
+}
+
+.try-again-text {
+  color: rgb(237, 240, 245);
+}
+
+.scores-header {
+  color: rgb(237, 240, 245);
+}
+
+.scores-list {
+  padding-bottom: 1em;
+}
+
+.scores-list-item {
+  color: rgb(237, 240, 245);
+}
+
+.high-score-text {
+  color: rgb(237, 240, 245);
 }
