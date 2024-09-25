@@ -50,7 +50,7 @@ export default function GameUI({ startGame, gameEnded, saveScore }) {
             </div>
         }
         {gameEnded ? <div className={'game-over-container'}> <div className={'game-over-text'}>GAME OVER</div>
-        {score > JSON.parse(localStorage.getItem('scores'))[0]? <div className={'high-score-text'}>new high score!</div>:null}
+        {score > JSON.parse(localStorage.getItem('scores'))[0]|| localStorage.getItem('scores') == undefined? <div className={'high-score-text'}>new high score!</div>:null}
         <p className={'scores-header'}>LEADERBOARD</p>
             <div className={'scores-list'}>
                 {JSON.parse(localStorage.getItem('scores')).map((e) => {
